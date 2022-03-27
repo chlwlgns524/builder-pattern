@@ -14,11 +14,11 @@ public class Main {
     public static void main(String[] args) {
         KakaoUser user = createKakaoUser();
 
-        Account bankAccount = accountDirector(new BankAccountBuilder(), user);
-        Account gameAccount = accountDirector(new GameAccountBuilder(), user);
+        BankAccount bankAccount = (BankAccount)accountDirector(new BankAccountBuilder(), user);
+        GameAccount gameAccount = (GameAccount)accountDirector(new GameAccountBuilder(), user);
 
-        System.out.println((BankAccount)bankAccount);
-        System.out.println((GameAccount)gameAccount);
+        System.out.println(bankAccount);
+        System.out.println(gameAccount);
     }
 
     //director method
