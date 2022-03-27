@@ -1,4 +1,4 @@
-package user;
+package myBuilder.user;
 
 public class Email {
 

@@ -1,6 +1,6 @@
-package builder;
+package myBuilder.builder;
 
-import account.Account;
+import myBuilder.account.Account;
 
 public abstract class AccountBuilder {
 

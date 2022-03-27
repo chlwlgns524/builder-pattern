@@ -1,4 +1,4 @@
-package account;
+package myBuilder.account;
 
 public class GameAccount extends Account {
 

@@ -1,12 +1,14 @@
-import account.Account;
-import account.BankAccount;
-import account.GameAccount;
-import builder.AccountBuilder;
-import builder.BankAccountBuilder;
-import builder.GameAccountBuilder;
+package myBuilder;
+
+import myBuilder.account.Account;
+import myBuilder.account.BankAccount;
+import myBuilder.account.GameAccount;
+import myBuilder.builder.AccountBuilder;
+import myBuilder.builder.BankAccountBuilder;
+import myBuilder.builder.GameAccountBuilder;
 import org.jetbrains.annotations.NotNull;
-import user.Email;
-import user.KakaoUser;
+import myBuilder.user.Email;
+import myBuilder.user.KakaoUser;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +21,7 @@ public class Main {
         System.out.println((GameAccount)gameAccount);
     }
 
+    //director method
     public static Account accountDirector(AccountBuilder builder, KakaoUser user) {
         Account account;
 
@@ -40,7 +43,8 @@ public class Main {
 
         return account;
     }
-
+    
+    //user 객체 생성
     public static @NotNull KakaoUser createKakaoUser() {
         KakaoUser user = new KakaoUser();
 

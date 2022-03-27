@@ -1,8 +1,8 @@
-package builder;
+package myBuilder.builder;
 
-import account.Account;
-import account.GameAccount;
-import user.Email;
+import myBuilder.account.Account;
+import myBuilder.account.GameAccount;
+import myBuilder.user.Email;
 
 public class GameAccountBuilder extends AccountBuilder {
 

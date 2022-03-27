@@ -1,4 +1,8 @@
-package account;
+package myBuilder.account;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 
 public abstract class Account {
 
@@ -24,6 +28,14 @@ public abstract class Account {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "koName='" + koName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                '}';
     }
 
 }

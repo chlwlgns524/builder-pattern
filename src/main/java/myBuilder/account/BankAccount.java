@@ -1,6 +1,6 @@
-package account;
+package myBuilder.account;
 
-import user.Email;
+import myBuilder.user.Email;
 
 public class BankAccount extends Account {
 
